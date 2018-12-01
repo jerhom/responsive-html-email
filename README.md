@@ -1,4 +1,3 @@
-I broke it down in simple steps to get you going.
 
 **Steps**
 ---------
