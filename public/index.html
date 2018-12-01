@@ -12,17 +12,101 @@
         .container{
           width: 960px;
         }
+        .header-left{
+            padding: 51px 15px 58px !important;
+        }
+        .lets-you-row .left-column{
+          padding: 15px 15px 70px 30px !important;
+        }
+        .one-solution-table{
+          text-align: center;
+        }
+        .one-solution-table img{
+          max-width: 611px;
+        }
+        .detail-table .first-row-table .left-column{
+          padding: 10px 15px 10px 37px !important;
+        }
       }
       /* Mid sizes */
       @media only screen and (max-width: 960px){
         .container{
           width: 600px;
         }
+        .lets-you-row .left-column{
+          padding: 15px 15px 70px 25px !important;
+        }
+        .join-together-table .join-together-column p{
+          padding: 0 15px 15px;
+        }
+        .detail-table .first-row-table .left-column{
+          padding-left: 25px !important;
+        }
+        .detail-table .first-row-table .right-column{
+          padding-left: 25px !important;
+        }
       }
       /* Mobile */
       @media only screen and (max-width: 600px){
         .container{
           width: 100%;
+        }
+        .header-left{
+          width: 100%;
+        }
+        .header-right{
+          width: 100%;
+        }
+        .lets-you-row .left-column{
+          width: 50%;
+        }
+        .lets-you-row .middle-column{
+          width: 50%;
+        }
+        .lets-you-row .right-column{
+          width: 100%;
+        }
+        .lets-you-row .right-column .connect{
+          padding: 0 108px 0 0;
+        }
+        .advance-table .image-head{
+          width: 100%;
+        }
+        .advance-table .left-column{
+          width: 100%;
+          padding: 15px 15px 10px 15px !important;
+        }
+         .advance-table .left-column p{
+          text-align: left;
+          padding-bottom: 21px !important;
+        }
+        .advance-table .left-column td:nth-child(1){
+          text-align: center;
+        }
+        .advance-table .right-column{
+          width: 100%;
+          padding: 15px 15px 51px 15px !important;
+        }
+         .advance-table .right-column p{
+          text-align: left;
+          padding-bottom: 21px !important;
+        }
+        .advance-table .right-column td:nth-child(1){
+          text-align: center;
+        }
+        .join-together-table .join-together-column{
+          grid-template-columns: 1fr !important;
+        }
+        .join-together-table .join-together-column p{
+          padding: 0 15px 15px;
+        }
+        .detail-table .first-row-table .left-column{
+          width: 100%;
+          padding-left: 30px !important;
+        }
+        .detail-table .first-row-table .right-column{
+          width: 100%;
+          padding-left: 30px !important;
         }
       }
     </style>
@@ -36,15 +120,15 @@
           <table class="container" width="600px" align="center" cellspacing="0" cellpadding="0">
             <!-- start of header row -->
             <tr>
-              <td class="header-row" style="display: grid; grid-template-columns: 1fr 1fr;">
+              <td>
                 <!-- start of left column -->
-                <table class="header-left" align="left" border="0" cellspacing="0" cellpadding="0" style="background: rgb(101,255,252);
+                <table class="header-left" width="50%" align="left" border="0" cellspacing="0" cellpadding="0" style="background: rgb(101,255,252);
                   background: -moz-linear-gradient(-45deg, rgba(101,255,252,1) 0%, rgba(34,150,238,1) 100%);
                   background: -webkit-linear-gradient(-45deg, rgba(101,255,252,1) 0%,rgba(34,150,238,1) 100%);
-                  background: linear-gradient(135deg, rgba(101,255,252,1) 0%,rgba(34,150,238,1) 100%); padding: 15px 15px 52px; height: 100%">
+                  background: linear-gradient(135deg, rgba(101,255,252,1) 0%,rgba(34,150,238,1) 100%); padding: 28px 15px 39px">
                   <tr>
                     <td style="color: #fff;">
-                      <img src="img/logo.png">
+                      <img src="http://jerome.etherealwebthings.com/emails/hero/logo.png">
                       <h2 style="font-size: 30px; font-weight: 300; margin: 0; line-height: 1; padding: 25px 0 10px;">Get ready for</h2>
                       <h1 style="font-size: 80px; margin: 0; line-height: 1; padding: 0 0 10px;">HERO</h1>
                       <p style="font-size: 14px; font-style: italic; margin: 0; line-height: 1.5; padding: 20px 0 50px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -56,7 +140,7 @@
                 </table>
                 <!-- end of left column -->
                 <!-- start of right column -->
-                <table class="header-right" align="right" border="0" cellspacing="0" cellpadding="0" style="background: #fff;">
+                <table class="header-right" width="50%" align="right" border="0" cellspacing="0" cellpadding="0" style="background: #fff;">
                   <tr>
                     <td>
                       <table class="menu-table" align="center" border="0" cellspacing="0" cellpadding="0" width="100%" style="padding: 20px;">
@@ -76,7 +160,7 @@
                   </tr>
                   <tr>
                     <td align="center" valign="bottom" style="padding-top: 18px;">
-                      <img src="img/smartwatch.png" style="position: relative; top: 5px;">
+                      <img src="http://jerome.etherealwebthings.com/emails/hero/smartwatch.png" style="position: relative; top: 5px;">
                     </td>
                   </tr>
                 </table>
@@ -94,8 +178,8 @@
                         <td>
                           <table class="title-icon" width="100%" align="left" border="0" cellspacing="0" cellpadding="0" style="height: 100%; padding: 0;">
                             <tr>
-                              <td><img src="/img/bell_icon.png"></td>
-                              <td style="color: #333333; font-weight: 600; font-size: 14px; padding: 0 0 0 15px;">NOTIFY</td>
+                              <td><img src="http://jerome.etherealwebthings.com/emails/hero/bell_icon.png"></td>
+                              <td style="color: #333333; font-weight: 600; font-size: 14px;">NOTIFY</td>
                             </tr>
                           </table>
                         </td>
@@ -113,13 +197,13 @@
                     </table>
                   <!-- end of left column -->
                   <!-- start of middle column -->
-                    <table class="left-column" width="33.33%" align="left" border="0" cellspacing="0" cellpadding="0" style="padding: 15px 15px 70px 15px; height: 100%">
+                    <table class="middle-column" width="33.33%" align="left" border="0" cellspacing="0" cellpadding="0" style="padding: 15px 15px 70px 15px; height: 100%">
                       <tr>
                         <td>
                           <table class="title-icon" width="100%" align="left" border="0" cellspacing="0" cellpadding="0" style="height: 100%; padding: 0;">
                             <tr>
-                              <td><img src="/img/share_icon.png"></td>
-                              <td style="color: #333333; font-weight: 600; font-size: 14px; padding: 0 0 0 15px;">SHARE</td>
+                              <td><img src="http://jerome.etherealwebthings.com/emails/hero/share_icon.png"></td>
+                              <td style="color: #333333; font-weight: 600; font-size: 14px;">SHARE</td>
                             </tr>
                           </table>
                         </td>
@@ -142,8 +226,8 @@
                         <td>
                           <table class="title-icon" width="100%" align="left" border="0" cellspacing="0" cellpadding="0" style="height: 100%; padding: 0;">
                             <tr>
-                              <td><img src="/img/wifi_icon.png"></td>
-                              <td style="color: #333333; font-weight: 600; font-size: 14px; padding: 0 0 0 15px;">CONNECT</td>
+                              <td><img src="http://jerome.etherealwebthings.com/emails/hero/wifi_icon.png"></td>
+                              <td style="color: #333333; font-weight: 600; font-size: 14px;"><span class="connect">CONNECT</span></td>
                             </tr>
                           </table>
                         </td>
@@ -169,7 +253,7 @@
                 <table class="advance-table" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding: 15px 15px 0 15px; background: #fff;">
                   <tr>
                     <td align="center" style="color: #333333; font-weight: 300; font-size: 24px; padding: 36px 0 5px;"> 
-                      <img src="/img/image_head.jpg">
+                      <img class="image-head" src="http://jerome.etherealwebthings.com/emails/hero/image_head.jpg">
                     </td>
                   </tr>
                   <tr>
@@ -179,7 +263,7 @@
                   </tr>
                   <tr>
                     <td>
-                      <table class="advance-table-left" align="left" width="50%" border="0" cellspacing="0" cellpadding="0" style=";padding: 15px 15px 70px 15px; background: #fff;">
+                      <table class="left-column" align="left" width="50%" border="0" cellspacing="0" cellpadding="0" style=";padding: 15px 15px 70px 15px; background: #fff;">
                         <tr>
                           <td>
                             <p style="color: #7f8887; font-weight: 400; font-size: 14px; line-height: 1.8; padding-bottom: 30px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam fuga eaque sapiente perspiciatis, id consequuntur.</p>
@@ -187,11 +271,11 @@
                         </tr>
                         <tr>
                           <td align="right">
-                            <img src="/img/appstore.png">
+                            <img src="http://jerome.etherealwebthings.com/emails/hero/appstore.png" >
                           </td>
                         </tr>
                       </table>
-                      <table class="advance-table-right" align="right" width="50%" border="0" cellspacing="0" cellpadding="0" style="padding: 15px 15px 0 15px; background: #fff;">
+                      <table class="right-column" align="right" width="50%" border="0" cellspacing="0" cellpadding="0" style="padding: 15px 15px 0 15px; background: #fff;">
                         <tr>
                           <td>
                             <p style="color: #7f8887; font-weight: 400; font-size: 14px; line-height: 1.8; padding-bottom: 30px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam fuga eaque sapiente perspiciatis, id consequuntur.</p>
@@ -199,7 +283,7 @@
                         </tr>
                         <tr>
                           <td align="left">
-                            <img src="/img/playstore.png">
+                            <img src="http://jerome.etherealwebthings.com/emails/hero/playstore.png">
                           </td>
                         </tr>
                       </table>
@@ -215,7 +299,7 @@
                 <table class="one-solution-table" align="left" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding: 48px 0 40px; background: #141414;">
                   <tr>
                     <td>
-                      <img src="/img/one_app.jpg" style="width: 100%;">
+                      <img src="http://jerome.etherealwebthings.com/emails/hero/one_app.jpg" style="width: 100%;">
                     </td>
                   </tr>
                 </table>
@@ -228,16 +312,16 @@
                 <table class="join-together-table" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding: 50px 0 50px; background: #fff;">
                   <tr>
                     <td>
-                      <h3 align="center" style="color: #333333; font-weight: 300; font-size: 24px; padding: 25px 0 5px; margin: 0; text-tranform: capitalize; margin: 0;">Features <span style="font-weight: 600;">All Joined Together</span> in One App</h3>
+                      <h3 align="center" style="color: #333333; font-weight: 300; font-size: 24px; padding: 25px 0 29px; margin: 0; text-tranform: capitalize; margin: 0;">Features <span style="font-weight: 600;">All Joined Together</span> in One App</h3>
                     </td>
                   </tr>
                   <tr>
-                    <td style="display: grid; grid-template-columns: 1fr 1fr 1fr">
+                    <td class="join-together-column" style="display: grid; grid-template-columns: 1fr 1fr 1fr">
                       <!-- start of column -->
                       <table class="column-table" align="left" width="100%%" border="0" cellspacing="0" cellpadding="0" style="padding: 25px 0; background: #fff;">
                         <tr>
                           <td align="center">
-                            <img src="/img/watch_screen.png">
+                            <img src="http://jerome.etherealwebthings.com/emails/hero/watch_screen.png">
                           </td>
                         </tr>
                         <tr>
@@ -261,7 +345,7 @@
                       <table class="column-table" align="left" width="100%%" border="0" cellspacing="0" cellpadding="0" style="padding: 25px 0; background: #fff;">
                         <tr>
                           <td align="center">
-                            <img src="/img/watch_screen.png">
+                            <img src="http://jerome.etherealwebthings.com/emails/hero/watch_screen.png">
                           </td>
                         </tr>
                         <tr>
@@ -285,7 +369,7 @@
                       <table class="column-table" align="left" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding: 25px 0; background: #fff;">
                         <tr>
                           <td align="center">
-                            <img src="/img/watch_screen.png">
+                            <img src="http://jerome.etherealwebthings.com/emails/hero/watch_screen.png">
                           </td>
                         </tr>
                         <tr>
@@ -314,27 +398,27 @@
             <!-- start of detail row -->
             <tr>
               <td>
-                <table class="detail-table" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding: 50px 0 20px; background: #fafafa;">
+                <table class="detail-table" align="left" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding: 50px 0; background: #fafafa;">
                   <tr>
                     <td>
-                      <!-- start of first row -->
-                      <table class="first-row-table" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding: 0; background: #fafafa;">
+                      <!-- start of first row table -->
+                      <table class="first-row-table" align="left" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding: 0; background: #fafafa;">
                         <tr>
-                          <td style="display: grid; grid-template-columns: 1fr 1fr; grid-auto-rows: minmax(100px, auto);">
-                            <!-- left column start-->
-                            <table class="left-column" border="0" cellspacing="0" cellpadding="0" style="grid-colum: 1/2; grid-row: 1/2; padding: 0 15px 20px; background: #fafafa;">
+                          <td>
+                            <!-- start of left column -->
+                            <table class="left-column" align="left" width="50%" border="0" cellspacing="0" cellpadding="0" style="padding: 10px 15px 10px; background: #fafafa;">
                               <tr>
                                 <td>
-                                  <!-- icon table start-->
-                                  <table class="icon-table" align="left" border="0" cellspacing="0" cellpadding="0" style="background: #fafafa;">
+                                  <!-- start of icon table -->
+                                  <table class="icon-table" align="left" width="100%" border="0" cellspacing="0" cellpadding="0" style=" background: #fafafa;">
                                     <td>
-                                      <img src="/img/phone_icon.png">
+                                      <img src="http://jerome.etherealwebthings.com/emails/hero/phone_icon.png">
                                     </td>
                                     <td style="color: #333333; font-weight: 600; font-size: 14px; padding: 0 0 0 15px">
-                                      RESPONSIVE LAYOUT
+                                        RESPONSIVE LAYOUT
                                     </td>
                                   </table>
-                                  <!-- icon table end-->
+                                  <!-- end of icon table -->
                                 </td>
                               </tr>
                               <tr>
@@ -343,50 +427,52 @@
                                 </td>
                               </tr>
                             </table>
-                            <!-- left column end-->
-                            <!-- right column start-->
-                            <table class="right-column" border="0" cellspacing="0" cellpadding="0" style="grid-colum: 1/3; grid-row: 1/2; padding: 0 15px 20px; background: #fafafa;">
+                            <!-- end of left column -->
+                            <!-- start of right column -->
+                            <table class="right-column" align="left" width="50%" border="0" cellspacing="0" cellpadding="0" style="padding: 10px 15px 10px; background: #fafafa;">
                               <tr>
                                 <td>
-                                   <table class="left-column" align="left" border="0" cellspacing="0" cellpadding="0" style="background: #fafafa;">
+                                  <!-- start of icon table -->
+                                  <table class="icon-table" align="left" width="100%" border="0" cellspacing="0" cellpadding="0" style=" background: #fafafa;">
                                     <td>
-                                      <img src="/img/eye_icon.png">
+                                      <img src="http://jerome.etherealwebthings.com/emails/hero/eye_icon.png">
                                     </td>
                                     <td style="color: #333333; font-weight: 600; font-size: 14px; padding: 0 0 0 15px;">
                                       RETINA READY
                                     </td>
                                   </table>
+                                  <!-- end of icon table -->
                                 </td>
                               </tr>
-                              <tr>
+                               <tr>
                                 <td align="left">
                                   <p style="color: #7f8887; font-weight: 400; font-size: 14px; line-height: 1.8;">Tanjin is one of nearly 2,000 people to have landed on Italy's southernmost.</p>
                                 </td>
                               </tr>
                             </table>
-                            <!-- right column end-->
+                            <!-- end of right column -->
                           </td>
                         </tr>
                       </table>
-                      <!-- end of first row -->
-                       <!-- start of second row -->
-                      <table class="first-row-table" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding: 0; background: #fafafa;">
+                      <!-- end of first row table -->
+                      <!-- start of second row table -->
+                      <table class="first-row-table" align="left" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding: 0; background: #fafafa;">
                         <tr>
-                          <td style="display: grid; grid-template-columns: 1fr 1fr; grid-auto-rows: minmax(100px, auto);">
-                            <!-- left column start-->
-                            <table class="left-column" border="0" cellspacing="0" cellpadding="0" style="grid-colum: 1/2; grid-row: 1/2; padding: 0 15px 20px; background: #fafafa;">
+                          <td>
+                            <!-- start of left column -->
+                            <table class="left-column" align="left" width="50%" border="0" cellspacing="0" cellpadding="0" style="padding: 10px 15px 10px; background: #fafafa;">
                               <tr>
                                 <td>
-                                  <!-- icon table start-->
-                                  <table class="icon-table" align="left" border="0" cellspacing="0" cellpadding="0" style="background: #fafafa;">
+                                  <!-- start of icon table -->
+                                  <table class="icon-table" align="left" width="100%" border="0" cellspacing="0" cellpadding="0" style=" background: #fafafa;">
                                     <td>
-                                      <img src="/img/check_icon.png">
+                                      <img src="http://jerome.etherealwebthings.com/emails/hero/check_icon.png">
                                     </td>
                                     <td style="color: #333333; font-weight: 600; font-size: 14px; padding: 0 0 0 15px;">
                                       VARIOUS SKINS
                                     </td>
                                   </table>
-                                  <!-- icon table end-->
+                                  <!-- end of icon table -->
                                 </td>
                               </tr>
                               <tr>
@@ -395,50 +481,52 @@
                                 </td>
                               </tr>
                             </table>
-                            <!-- left column end-->
-                            <!-- right column start-->
-                            <table class="right-column" border="0" cellspacing="0" cellpadding="0" style="grid-colum: 1/3; grid-row: 1/2; padding: 0 15px 20px; background: #fafafa;">
+                            <!-- end of left column -->
+                            <!-- start of right column -->
+                            <table class="right-column" align="left" width="50%" border="0" cellspacing="0" cellpadding="0" style="padding: 10px 15px 10px; background: #fafafa;">
                               <tr>
                                 <td>
-                                   <table class="left-column" align="left" border="0" cellspacing="0" cellpadding="0" style="background: #fafafa;">
+                                  <!-- start of icon table -->
+                                  <table class="icon-table" align="left" width="100%" border="0" cellspacing="0" cellpadding="0" style=" background: #fafafa;">
                                     <td>
-                                      <img src="/img/settings_icon.png">
+                                      <img src="http://jerome.etherealwebthings.com/emails/hero/settings_icon.png">
                                     </td>
                                     <td style="color: #333333; font-weight: 600; font-size: 14px; padding: 0 0 0 15px;">
                                       GREAT PERFORMANCE
                                     </td>
                                   </table>
+                                  <!-- end of icon table -->
                                 </td>
                               </tr>
-                              <tr>
+                               <tr>
                                 <td align="left">
                                   <p style="color: #7f8887; font-weight: 400; font-size: 14px; line-height: 1.8;">Tanjin is one of nearly 2,000 people to have landed on Italy's southernmost.</p>
                                 </td>
                               </tr>
                             </table>
-                            <!-- right column end-->
+                            <!-- end of right column -->
                           </td>
                         </tr>
                       </table>
-                      <!-- end of second row -->
-                      <!-- start of third row -->
-                      <table class="first-row-table" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding: 0; background: #fafafa;">
+                      <!-- end of second row table -->
+                       <!-- start of third row table -->
+                      <table class="first-row-table" align="left" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding: 0; background: #fafafa;">
                         <tr>
-                          <td style="display: grid; grid-template-columns: 1fr 1fr; grid-auto-rows: minmax(100px, auto);">
-                            <!-- left column start-->
-                            <table class="left-column" border="0" cellspacing="0" cellpadding="0" style="grid-colum: 1/2; grid-row: 1/2; padding: 0 15px 20px; background: #fafafa;">
+                          <td>
+                            <!-- start of left column -->
+                            <table class="left-column" align="left" width="50%" border="0" cellspacing="0" cellpadding="0" style="padding: 10px 15px 10px; background: #fafafa;">
                               <tr>
                                 <td>
-                                  <!-- icon table start-->
-                                  <table class="icon-table" align="left" border="0" cellspacing="0" cellpadding="0" style="background: #fafafa;">
+                                  <!-- start of icon table -->
+                                  <table class="icon-table" align="left" width="100%" border="0" cellspacing="0" cellpadding="0" style=" background: #fafafa;">
                                     <td>
-                                      <img src="/img/menu_icon.png">
+                                      <img src="http://jerome.etherealwebthings.com/emails/hero/menu_icon.png">
                                     </td>
                                     <td style="color: #333333; font-weight: 600; font-size: 14px; padding: 0 0 0 15px;">
                                       USER FRIENDLY MENUS
                                     </td>
                                   </table>
-                                  <!-- icon table end-->
+                                  <!-- end of icon table -->
                                 </td>
                               </tr>
                               <tr>
@@ -447,32 +535,34 @@
                                 </td>
                               </tr>
                             </table>
-                            <!-- left column end-->
-                            <!-- right column start-->
-                            <table class="right-column" border="0" cellspacing="0" cellpadding="0" style="grid-colum: 1/3; grid-row: 1/2; padding: 0 15px 20px; background: #fafafa;">
+                            <!-- end of left column -->
+                            <!-- start of right column -->
+                            <table class="right-column" align="left" width="50%" border="0" cellspacing="0" cellpadding="0" style="padding: 10px 15px 10px; background: #fafafa;">
                               <tr>
                                 <td>
-                                   <table class="left-column" align="left" border="0" cellspacing="0" cellpadding="0" style="background: #fafafa;">
+                                  <!-- start of icon table -->
+                                  <table class="icon-table" align="left" width="100%" border="0" cellspacing="0" cellpadding="0" style=" background: #fafafa;">
                                     <td>
-                                      <img src="/img/share_icon.png">
+                                      <img src="http://jerome.etherealwebthings.com/emails/hero/share_icon.png">
                                     </td>
                                     <td style="color: #333333; font-weight: 600; font-size: 14px; padding: 0 0 0 15px;">
                                       SOCIAL SHARE
                                     </td>
                                   </table>
+                                  <!-- end of icon table -->
                                 </td>
                               </tr>
-                              <tr>
+                               <tr>
                                 <td align="left">
                                   <p style="color: #7f8887; font-weight: 400; font-size: 14px; line-height: 1.8;">Tanjin is one of nearly 2,000 people to have landed on Italy's southernmost.</p>
                                 </td>
                               </tr>
                             </table>
-                            <!-- right column end-->
+                            <!-- end of right column -->
                           </td>
                         </tr>
                       </table>
-                      <!-- end of third row -->
+                      <!-- end of third row table -->
                     </td>
                   </tr>
                 </table>
@@ -510,12 +600,12 @@
                     <td>
                       <table class="footer-table" align="center" width="250px" border="0" cellspacing="0" cellpadding="0">
                         <tr>
-                          <td align="center"><img src="/img/twitter_icon.png"></td>
-                          <td align="center"><img src="/img/facebook_icon.png"></td>
-                          <td align="center"><img src="/img/google_icon.png"></td>
-                          <td align="center"><img src="/img/pinterest_icon.png"></td>
-                          <td align="center"><img src="/img/linkedin_icon.png"></td>
-                          <td align="center"><img src="/img/youtube_icon.png"></td>
+                          <td align="center"><img src="http://jerome.etherealwebthings.com/emails/hero/twitter_icon.png"></td>
+                          <td align="center"><img src="http://jerome.etherealwebthings.com/emails/hero/facebook_icon.png"></td>
+                          <td align="center"><img src="http://jerome.etherealwebthings.com/emails/hero/google_icon.png"></td>
+                          <td align="center"><img src="http://jerome.etherealwebthings.com/emails/hero/pinterest_icon.png"></td>
+                          <td align="center"><img src="http://jerome.etherealwebthings.com/emails/hero/linkedin_icon.png"></td>
+                          <td align="center"><img src="http://jerome.etherealwebthings.com/emails/hero/youtube_icon.png"></td>
                         </tr>
                       </table>
                     </td>
