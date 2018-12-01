@@ -13,7 +13,7 @@
           width: 960px;
         }
         .header-left{
-            padding: 51px 15px 58px !important;
+            padding: 53px 15px 58px !important;
         }
         .lets-you-row .left-column{
           padding: 15px 15px 70px 30px !important;
@@ -33,12 +33,15 @@
         .container{
           width: 600px;
         }
+        .header-left{
+          padding: 51px 15px 39px !important;
+        }
         .lets-you-row .left-column{
           padding: 15px 15px 70px 25px !important;
         }
-        .join-together-table .join-together-column p{
-          padding: 0 15px 15px;
-        }
+        .join-together-table .column-table{
+          padding: 25px 8px !important;
+        }  
         .detail-table .first-row-table .left-column{
           padding-left: 25px !important;
         }
@@ -76,12 +79,15 @@
           width: 100%;
           padding: 15px 15px 10px 15px !important;
         }
+        .advance-table h3{
+          font-size: 20px !important;
+        }
          .advance-table .left-column p{
           text-align: left;
           padding-bottom: 21px !important;
         }
-        .advance-table .left-column td:nth-child(1){
-          text-align: center;
+        .advance-table .left-column .appstore{
+          text-align: center !important;
         }
         .advance-table .right-column{
           width: 100%;
@@ -91,11 +97,11 @@
           text-align: left;
           padding-bottom: 21px !important;
         }
-        .advance-table .right-column td:nth-child(1){
-          text-align: center;
+        .advance-table .right-column .playstore{
+          text-align: center !important;
         }
-        .join-together-table .join-together-column{
-          grid-template-columns: 1fr !important;
+        .join-together-table .column-table{
+          width: 100%;
         }
         .join-together-table .join-together-column p{
           padding: 0 15px 15px;
@@ -270,7 +276,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td align="right">
+                          <td align="right" class="appstore">
                             <img src="http://jerome.etherealwebthings.com/emails/hero/appstore.png" >
                           </td>
                         </tr>
@@ -282,7 +288,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td align="left">
+                          <td align="left" class="playstore">
                             <img src="http://jerome.etherealwebthings.com/emails/hero/playstore.png">
                           </td>
                         </tr>
@@ -316,9 +322,9 @@
                     </td>
                   </tr>
                   <tr>
-                    <td class="join-together-column" style="display: grid; grid-template-columns: 1fr 1fr 1fr">
+                    <td>
                       <!-- start of column -->
-                      <table class="column-table" align="left" width="100%%" border="0" cellspacing="0" cellpadding="0" style="padding: 25px 0; background: #fff;">
+                      <table class="column-table" align="left" width="33.33%" border="0" cellspacing="0" cellpadding="0" style="padding: 25px 0; background: #fff;">
                         <tr>
                           <td align="center">
                             <img src="http://jerome.etherealwebthings.com/emails/hero/watch_screen.png">
@@ -342,7 +348,7 @@
                       </table>
                       <!-- end of column -->
                       <!-- start of column -->
-                      <table class="column-table" align="left" width="100%%" border="0" cellspacing="0" cellpadding="0" style="padding: 25px 0; background: #fff;">
+                      <table class="column-table" align="left" width="33.33%" border="0" cellspacing="0" cellpadding="0" style="padding: 25px 0; background: #fff;">
                         <tr>
                           <td align="center">
                             <img src="http://jerome.etherealwebthings.com/emails/hero/watch_screen.png">
@@ -366,7 +372,7 @@
                       </table>
                       <!-- end of column -->
                       <!-- start of column -->
-                      <table class="column-table" align="left" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding: 25px 0; background: #fff;">
+                      <table class="column-table" align="left" width="33.33%" border="0" cellspacing="0" cellpadding="0" style="padding: 25px 0; background: #fff;">
                         <tr>
                           <td align="center">
                             <img src="http://jerome.etherealwebthings.com/emails/hero/watch_screen.png">
